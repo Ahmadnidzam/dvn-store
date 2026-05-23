@@ -1,0 +1,134 @@
+:root {
+    --aqua: #00d8d8;
+    --aqua-soft: #dffafa;
+    --aqua-dark: #009caa;
+    --dark-blue: #002f6c;
+    --ink: #102033;
+    --muted: #667085;
+    --line: #d9e5ec;
+    --light-bg: #eef7f9;
+    --surface: #ffffff;
+    --radius: 8px;
+    --shadow-md: 0 18px 42px rgba(0, 47, 108, .12);
+}
+
+body {
+    background:
+        linear-gradient(180deg, rgba(0, 216, 216, .12), rgba(0, 216, 216, 0) 280px),
+        var(--light-bg);
+    color: var(--ink);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--aqua-dark);
+}
+
+.auth-card,
+.choice-card {
+    background: rgba(255, 255, 255, .94);
+    border: 1px solid rgba(0, 47, 108, .08);
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow-md);
+}
+
+.auth-card {
+    width: min(100%, 420px) !important;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.brand-title,
+.auth-title {
+    color: var(--dark-blue);
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.brand-title {
+    letter-spacing: .02em;
+}
+
+.form-control,
+.form-select {
+    border-color: var(--line);
+    border-radius: var(--radius);
+    min-height: 44px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--aqua-dark);
+    box-shadow: 0 0 0 .2rem rgba(0, 216, 216, .16);
+}
+
+.form-label {
+    color: var(--ink);
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.btn-dvn {
+    background: var(--dark-blue);
+    border: 0;
+    border-radius: var(--radius);
+    color: #fff;
+    font-weight: 800;
+    min-height: 44px;
+}
+
+.btn-dvn:hover {
+    background: #001f4d;
+    color: #fff;
+}
+
+.choice-card {
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.choice-card:hover {
+    border-color: var(--aqua);
+    box-shadow: 0 22px 48px rgba(0, 47, 108, .16);
+    transform: translateY(-3px);
+}
+
+.icon-big {
+    color: var(--aqua-dark);
+    font-size: 3.5rem;
+}
+
+.section-title {
+    border-bottom: 1px solid var(--line);
+    color: var(--dark-blue);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.alert {
+    border: 0;
+    border-radius: var(--radius);
+}
+
+@media (max-width: 575.98px) {
+    .auth-card,
+    .choice-card {
+        padding: 1.25rem !important;
+    }
+
+    .vh-100 {
+        min-height: 100dvh !important;
+        height: auto !important;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}

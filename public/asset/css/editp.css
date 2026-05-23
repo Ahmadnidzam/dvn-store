@@ -1,0 +1,148 @@
+    .profile-edit-card {
+        background: white;
+        border: 1px solid rgba(0, 47, 108, .08);
+        border-radius: 8px;
+        box-shadow: var(--shadow-sm);
+        overflow: hidden;
+    }
+
+    .profile-header {
+        background: linear-gradient(135deg, var(--dark-blue) 0%, #004fa3 72%, rgba(0, 216, 216, .8) 100%);
+        padding: 2rem;
+        color: white;
+        text-align: center;
+    }
+
+    .avatar-upload-container {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem;
+    }
+
+    .avatar-preview {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .avatar-upload-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        background: var(--aqua);
+        border-radius: 50%;
+        border: 3px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .avatar-upload-btn:hover {
+        background: #00b8b8;
+        transform: scale(1.1);
+    }
+
+    .avatar-upload-btn i {
+        color: white;
+        font-size: 16px;
+    }
+
+    #avatarInput {
+        display: none;
+    }
+
+    .form-section {
+        padding: 2rem;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--dark-blue);
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .form-control, .form-select {
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        transition: 0.3s;
+        font-size: 0.95rem;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--aqua);
+        box-shadow: 0 0 0 0.2rem rgba(0, 216, 216, 0.15);
+    }
+
+    .bank-option {
+        padding: 0.5rem;
+    }
+
+    .btn-save {
+        background: var(--dark-blue);
+        color: white;
+        border: none;
+        padding: 0.75rem 2.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .btn-save:hover {
+        background: #001f4d;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 216, 216, 0.4);
+    }
+
+    .btn-cancel {
+        background: transparent;
+        color: #6c757d;
+        border: 2px solid #e0e0e0;
+        padding: 0.75rem 2.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .btn-cancel:hover {
+        background: #f8f9fa;
+        border-color: #6c757d;
+        color: #495057;
+    }
+
+    .input-icon {
+        position: relative;
+    }
+
+    .input-icon i {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+    }
+
+    .input-icon .form-control {
+        padding-left: 2.75rem;
+    }
+
+    @media (max-width: 768px) {
+        .form-section {
+            padding: 1.5rem;
+        }
+        
+        .btn-save, .btn-cancel {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }

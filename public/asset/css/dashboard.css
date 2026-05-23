@@ -1,0 +1,298 @@
+.scroll-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: .75rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: var(--aqua-dark);
+    border-radius: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #dbe8ee;
+    border-radius: 8px;
+}
+
+.nav-pills {
+    background: rgba(255, 255, 255, .86);
+    border: 1px solid rgba(0, 47, 108, .08);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    display: inline-flex;
+    padding: .4rem;
+    max-width: 100%;
+}
+
+.store-nav-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-pills .nav-link {
+    color: var(--dark-blue);
+    border-radius: 8px;
+    font-weight: 800;
+    min-height: 42px;
+    white-space: nowrap;
+}
+
+.nav-pills .nav-link.active {
+    background: var(--dark-blue);
+    color: #fff;
+}
+
+.nav-pills .nav-link:hover {
+    background: var(--aqua-soft);
+    color: var(--dark-blue);
+}
+
+#mainCarousel {
+    border: 1px solid rgba(0, 47, 108, .08);
+    border-radius: 8px !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+#mainCarousel .carousel-item > .position-relative {
+    height: 360px !important;
+    background:
+        linear-gradient(90deg, rgba(8, 41, 71, .96), rgba(8, 41, 71, .66)),
+        url("/asset/image/roblox_1.png") center/cover no-repeat !important;
+}
+
+#mainCarousel .carousel-item:nth-child(2) > .position-relative {
+    background:
+        linear-gradient(90deg, rgba(0, 47, 108, .94), rgba(0, 156, 170, .56)),
+        url("/asset/image/logap.png") center right 14%/220px no-repeat,
+        #082947 !important;
+}
+
+#mainCarousel h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+#mainCarousel .btn-light {
+    border: 0;
+    border-radius: 8px !important;
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+.section-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: var(--ink);
+    font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+}
+
+.section-title::after {
+    display: none;
+}
+
+.view-all-link {
+    align-items: center;
+    color: var(--dark-blue);
+    display: inline-flex;
+    font-weight: 800;
+    gap: .25rem;
+}
+
+.view-all-link:hover {
+    color: var(--aqua-dark);
+}
+
+.card-hover {
+    border: 1px solid rgba(0, 47, 108, .08);
+    border-radius: 8px !important;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 180px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-hover:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.card-medium {
+    height: 240px;
+}
+
+.overlay-gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, .72), transparent 70%);
+    inset: 0;
+    position: absolute;
+}
+
+.product-card {
+    background: var(--surface);
+    border: 1px solid rgba(0, 47, 108, .08);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    min-width: 235px !important;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.product-card:hover {
+    border-color: rgba(0, 216, 216, .7);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.product-card a {
+    color: inherit;
+    display: block;
+}
+
+.product-image {
+    align-items: center;
+    background: var(--surface-soft);
+    display: flex;
+    height: 165px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-info {
+    padding: .95rem;
+}
+
+.product-category {
+    color: var(--aqua-dark);
+    font-size: .76rem;
+    font-weight: 800;
+    margin-bottom: .35rem;
+    text-transform: uppercase;
+}
+
+.product-title {
+    color: var(--ink);
+    display: -webkit-box;
+    font-size: 1rem;
+    font-weight: 800;
+    min-height: 2.6rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.product-rating {
+    align-items: center;
+    color: var(--muted);
+    display: flex;
+    gap: .35rem;
+    margin-bottom: .75rem;
+}
+
+.product-rating .stars {
+    color: #f5b400;
+}
+
+.product-price {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: .75rem;
+}
+
+.price-tag {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.btn-add {
+    background: var(--aqua);
+    border-color: var(--aqua);
+    border-radius: 8px;
+    color: var(--dark-blue);
+    font-size: .85rem;
+    padding: .4rem .8rem;
+    white-space: nowrap;
+}
+
+.btn-add:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    #mainCarousel .carousel-item > .position-relative {
+        height: 300px !important;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .nav-pills {
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .nav-pills .nav-link {
+        font-size: .92rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
+    .scroll-container {
+        gap: .85rem !important;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .product-card {
+        min-width: min(78vw, 280px) !important;
+    }
+
+    .product-card.d-flex {
+        align-items: stretch !important;
+        width: 100%;
+    }
+
+    .product-card.d-flex .product-image {
+        flex: none !important;
+        height: 190px !important;
+        width: 100% !important;
+    }
+
+    .product-price {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+}
